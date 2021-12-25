@@ -4,7 +4,7 @@ RUN yum update -y
 
 RUN yum install httpd -y
 
-COPY ./web/index.html /var/www/html
+COPY ./index.html /var/www/html
 
 CMD ["httpd", "-D", "FOREGROUND"]
 
